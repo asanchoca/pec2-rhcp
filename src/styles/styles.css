@@ -1,0 +1,195 @@
+* {
+  color: #8B0000;
+  font-family: 'Alegreya';
+}
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.divFlex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+.photoHeaderPortada {
+  background-image: url("../../img/cover-rhcp.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-origin:padding-box;
+  background-size:100%;
+  height: 30vh;
+  color: white;
+  width: unset;
+}
+
+.parent {
+  margin: auto;
+  margin-bottom: 10px;
+  border: #8B0000 2px solid;
+  width: 40%;
+  height: 100%;
+  text-align: center;
+}
+
+.child {
+  width: 84%;
+  height: 100%;
+  background-color: #ed9292b1; 
+  background-position: center;
+  background-size: 100%;
+  padding: 8%;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+transform: scale(1.2);
+}
+
+.content80width {
+  width: 80%;
+  margin: auto;
+}
+
+.planesContainer {
+  display: grid;
+  grid-template-columns: 0.75fr 2.5fr 0.75fr;
+  gap: 20px;
+}
+
+.titleLogoHeader {
+  display: grid;
+  grid-template-columns: 0.75fr 2.5fr 0.75fr;
+  gap: 20px;
+}
+
+.divBack {
+  background-color: #ed9292b1;
+  padding: 10px;
+}
+
+.planesContainer div img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  position: static;
+}
+
+.centeredImg {
+  display: flex;
+  justify-content: center;
+}
+
+.animation {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+
+.animation:hover {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+figure {
+  text-align: right ;
+  font-size: smaller;
+  margin-right: 10px;
+  margin-bottom: 5%;
+}
+
+figure blockquote {
+  margin-right: 0px;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  border: none;
+  max-width: 100%;
+}
+
+article img, figcaption {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  display: block;
+  margin: auto;
+}
+
+#portadaFigcaption {
+  margin-right: 0px;
+  text-align: right ;
+}
+
+footer {
+  background-color: #ed9292b1;
+  color: #8B0000;
+  text-align: center;
+  font-family: 'Open Sans';
+  padding: 10px;
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  header { text-align: center; }
+ 
+  .logo, .titleWeb {
+    display: block; 
+    margin: 0 auto; 
+  }
+
+  .titleLogoHeader {
+    display: block;
+  }
+
+  .detailphoto {
+    display: block; 
+    margin: auto; 
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .planesContainer {
+    grid-template-columns: none;
+    grid-template-rows: 0.75fr 2.5fr 0.75fr;
+  }
+}
+
+
+footer.homefooter {
+  background-color: initial;
+  margin-top: initial;
+}
+
+.logofooter {
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+footer ul {
+  padding-left: 0px;
+}
+
+footer ul li {
+  display: inline-block;
+  color: white;
+}
+
+footer ul li::before {
+  content: "·";
+  padding-right: 10px;
+  padding-left: 10px;
+}
